@@ -10,15 +10,16 @@
               crossorigin="anonymous">
         <link rel="stylesheet"
               href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="{{ site.base }}/css/group.css">
+        <!-- 把 {{ site.base }} 替换为 / -->
+        <link rel="stylesheet" href="/css/group.css">
     </head>
     <body>
         <div class="container">
-            <!-- This is a bit nasty, but it basically says be a column first, and on larger screens be a spaced out row -->
             <div class="header d-flex
                         flex-column
                         flex-md-row justify-content-md-between">
                 <a href="/" class="">
+                    <!-- 这里已经是正确的根路径 -->
                     <img src="/img/logo.png" 
                          srcset="/img/logo@2x.png 2x"
                          alt="Awesome" id="logo">
@@ -72,14 +73,12 @@
                     -
                     <a href = "mailto: hangxiao@ln.edu.hk">hangxiao@ln.edu.hk</a>
                 </p>
-
-
             </div>
 
-        </div> <!-- /container -->
+        </div>
 
-        <!-- Support retina images. -->
+        <!-- 把 {{ site.base }} 替换为 / -->
         <script type="text/javascript"
-                src="{{ site.base }}/js/srcset-polyfill.js"></script>
+                src="/js/srcset-polyfill.js"></script>
     </body>
 </html>
