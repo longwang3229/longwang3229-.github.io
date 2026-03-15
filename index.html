@@ -3,6 +3,7 @@ layout: default
 title: Home
 notitle: true
 
+# groups of columns of {roles: list, width: num, image: bool}
 role-tables:
 - - roles: [faculty, postdoc, staff]
     width: 4
@@ -24,7 +25,7 @@ role-tables:
         <b>王龙课题组</b>开发了首个<b>基于字符串的可逆晶体表示法: SLICES</b>,实现了生成式AI驱动的<b>Text2Crystal</b>。SLICES有望成为AI驱动的晶体材料逆向设计的标准工具,即<b>晶体材料的"SMILES"</b>。 
     </p>
     <p>
-    The <b>Wang Research Group</b> developed the first <b>string-based invertible, invariant crystallographic representation: SLICES</b>, achieving <b>Text2Crystal</b> powered by generative AI. SLICES has the potential to become a standard tool for <i> in-silico </i> materials discovery, i.e. "SMILES" for crystal structures.
+    The <b>XIAO Research Group</b> developed the first <b>string-based invertible, invariant crystallographic representation: SLICES</b>, achieving <b>Text2Crystal</b> powered by generative AI. SLICES has the potential to become a standard tool for <i> in-silico </i> materials discovery, i.e. "SMILES" for crystal structures.
     </p>
 </div>
 
@@ -44,13 +45,25 @@ role-tables:
     {% endif %}
 </section>
 
-<section>
-    <h2>Chatbot</h2>
-    <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/6.5.1/gradio.js"></script>
-    <gradio-app src="https://longwang3229-longwang3229.hf.space" theme_mode="light"></gradio-app>
-</section>
+<!-- <script
+	type="module"
+	src="https://gradio.s3-us-west-2.amazonaws.com/4.41.0/gradio.js"
+></script> -->
 
-<section id="people">
+<script
+	type="module"
+	src="https://gradio.s3-us-west-2.amazonaws.com/6.5.1/gradio.js"
+></script>
+
+<!-- <gradio-app src="https://longwang3229.hf.space" theme_mode="light"></gradio-app> -->
+
+<!-- <gradio-app src="https://huggingface.co/spaces/longwang3229/longwang3229" theme_mode="light"></gradio-app> -->
+
+<gradio-app src="https://longwang3229-longwang3229.hf.space" theme_mode="light"></gradio-app>
+
+
+
+<div id="people">
     <h2>People</h2>
     {% for role-table in page.role-tables %}
         <section class="people row justify-content-between">
@@ -63,4 +76,4 @@ role-tables:
             {% endfor %}
         </section>
     {% endfor %}
-</section>
+</div>
