@@ -1,5 +1,5 @@
-name: 肖航课题组  Xiao Research Group
-url: https://xiaohang007.github.io/
+name: 王龙课题组  Long Research Group
+url: https://longwang3229.github.io/
 
 exclude: [bibble, README.md, Makefile, screenshot.png]
 
@@ -34,9 +34,9 @@ collections:
 
 # Navigation bar links.
 navigation:
-  - title: 主页 Home
+  - title: 前往主页 Go to homepage
     link: /
-  - title: 科研 Research
+  - title: 进行科研 Conduct scientific research
     link: /research.html
-  - title: 论文 Publications
+  - title: 查看论文 View the Publications
     link: /publications.html
