@@ -30,7 +30,7 @@ role-tables:
 </div>
 
 <section>
-    <h2>News</h2>
+    <h2 style="color:#333333>News</h2>
     <ul class="news list-unstyled">
         {% for post in site.posts limit: site.front_page_news %}
             {% include news-item.html item=post %}
@@ -64,7 +64,7 @@ role-tables:
 
 
 <div id="people">
-    <h2>People</h2>
+    <h2 style="color:#333333>People</h2>
     {% for role-table in page.role-tables %}
         <section class="people row justify-content-between">
             {% for role-column in role-table %}
