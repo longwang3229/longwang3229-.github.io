@@ -15,14 +15,14 @@ body {
 }
 
 /* ===================================== */
-/* 头部优化：阴影更柔和 */
+/* Header & Logo 优化 */
 /* ===================================== */
 .header {
     background: white;
     border-radius: 10px;
     padding: 16px 24px;
-    margin-bottom: 24px;
-    box-shadow: 0 1px 6px rgba(0,0,0,0.03);
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -36,49 +36,41 @@ body {
 }
 
 /* ===================================== */
-/* 导航按钮优化：更深蓝 + 圆角更大 */
+/* 导航栏美化 */
 /* ===================================== */
 .nav-pills .nav-link {
     color: #444;
     font-weight: 500;
-    padding: 9px 16px;
-    border-radius: 8px;
+    padding: 8px 14px;
+    border-radius: 6px;
     transition: 0.2s;
 }
 .nav-pills .nav-link.active,
 .nav-pills .nav-link:hover {
-    background-color: #1a68c2;
+    background-color: $primary-blue;
     color: white;
 }
 
 /* ===================================== */
-/* 介绍区块：间距加大 + 更舒展 */
+/* 介绍区域优化 */
 /* ===================================== */
 .jumbotron {
     background-color: $light-gray;
     border-radius: 10px;
-    padding: 28px;
+    padding: 24px;
     font-size: 109%;
-    margin-bottom: 24px;
-}
-.jumbotron p {
-    margin-bottom: 16px;
-}
-
-/* 关键词高亮蓝色 */
-.jumbotron b {
-    color: #2d83e5;
+    margin-bottom: 30px;
 }
 
 /* ===================================== */
-/* 全局区块统一间距 24px */
+/* 区块卡片样式 */
 /* ===================================== */
 section {
     background: white;
     border-radius: 10px;
     padding: 24px;
-    margin-bottom: 24px;
-    box-shadow: 0 1px 5px rgba(0,0,0,0.03);
+    margin-bottom: 26px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
 section h2 {
@@ -89,28 +81,31 @@ section h2 {
 }
 
 /* ===================================== */
-/* 新闻优化：hover + 日期间距 */
+/* 新闻样式 */
 /* ===================================== */
 ul.news li {
-    padding: 12px 0;
+    padding: 10px 0;
     border-bottom: 1px solid #eee;
-}
-ul.news li:hover {
-    background: #fafbfc;
-    padding-left: 6px;
-    transition: 0.2s;
 }
 ul.news li:last-child {
     border-bottom: none;
 }
 ul.news .date {
-    display: inline-block;
-    margin-bottom: 4px;
     color: #888;
+    font-weight: normal;
 }
 
 /* ===================================== */
-/* 人员模块：hover + 无头像自动缩进 */
+/* 嵌入 AI 组件美化 */
+/* ===================================== */
+gradio-app {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #eee;
+}
+
+/* ===================================== */
+/* 人员卡片优化 */
 /* ===================================== */
 .person {
     padding: 10px;
@@ -123,24 +118,12 @@ ul.news .date {
     border-radius: 50%;
 }
 
-/* 无头像人员缩进对齐 */
-.person-without-image .bio {
-    margin-left: 78px !important;
-}
-
 /* ===================================== */
-/* 页脚优化：更宽松、易读 */
+/* 页脚优化 */
 /* ===================================== */
 .footer {
     text-align: center;
-    padding: 24px 0;
+    padding-top: 20px;
     color: #888;
     font-size: 13px;
-    line-height: 1.6;
-}
-
-gradio-app {
-    border-radius: 10px;
-    overflow: hidden;
-    border: 1px solid #eee;
 }
