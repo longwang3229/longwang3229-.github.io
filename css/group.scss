@@ -154,3 +154,16 @@ section {
 svg {
     vertical-align: middle;
 }
+
+/* 蓝色小圆点 + 缩进 */
+#people .role.collab ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+#people .role.collab li::before {
+    content: "•";
+    color: #007bff; /* 主题蓝色 */
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
