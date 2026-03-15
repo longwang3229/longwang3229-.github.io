@@ -3,7 +3,6 @@ layout: default
 title: Home
 notitle: true
 
-# groups of columns of {roles: list, width: num, image: bool}
 role-tables:
 - - roles: [faculty, postdoc, staff]
     width: 4
@@ -45,25 +44,13 @@ role-tables:
     {% endif %}
 </section>
 
-<!-- <script
-	type="module"
-	src="https://gradio.s3-us-west-2.amazonaws.com/4.41.0/gradio.js"
-></script> -->
+<section>
+    <h2>Chatbot</h2>
+    <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/6.5.1/gradio.js"></script>
+    <gradio-app src="https://longwang3229-longwang3229.hf.space" theme_mode="light"></gradio-app>
+</section>
 
-<script
-	type="module"
-	src="https://gradio.s3-us-west-2.amazonaws.com/6.5.1/gradio.js"
-></script>
-
-<!-- <gradio-app src="https://longwang3229.hf.space" theme_mode="light"></gradio-app> -->
-
-<!-- <gradio-app src="https://huggingface.co/spaces/longwang3229/longwang3229" theme_mode="light"></gradio-app> -->
-
-<gradio-app src="https://longwang3229-longwang3229.hf.space" theme_mode="light"></gradio-app>
-
-
-
-<div id="people">
+<section id="people">
     <h2>People</h2>
     {% for role-table in page.role-tables %}
         <section class="people row justify-content-between">
@@ -76,4 +63,4 @@ role-tables:
             {% endfor %}
         </section>
     {% endfor %}
-</div>
+</section>
