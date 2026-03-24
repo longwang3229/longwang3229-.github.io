@@ -94,14 +94,30 @@ role-tables:
   </div>
 </div>
 
-<!-- AI 去静音视频展示 -->
+<!-- AI 去静音视频展示（原视频 + 处理后视频） -->
 <div style="background:#e8f5f2; border-left:5px solid #16a085; padding:20px; border-radius:8px; margin:30px 0;">
-  <h3 style="color:#16a085; margin:0 0 10px 0;">🎬 AI Video Silence Removal Demo</h3>
-  <p style="color:#34495e; margin:0 0 15px 0;">Created with Python (Lecture9)</p>
-  <video controls style="width:100%; max-width:500px; border-radius:8px; box-shadow:0 2px 6px #00000015;">
-    <source src="Vedio2.mp4" type="video/mp4">
-    Your browser does not support the video tag.
+  <h3 style="color:#16a085; margin:0 0 15px 0;">🎬 AI Video Silence Removal Demo</h3>
+  <p style="color:#34495e; margin:0 0 20px 0;">Created with Python</p>
   
+  <div style="display:flex; gap:20px; flex-wrap:wrap;">
+    <!-- 原视频 -->
+    <div style="flex:1; min-width:280px;">
+      <p style="font-weight:600; margin:0 0 8px 0;">Original Video (with silence)</p>
+      <video controls style="width:100%; max-width:400px; border-radius:8px; box-shadow:0 2px 6px #00000015;">
+        <source src="Vedio1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      
+    </div>
+    
+    <!-- 处理后视频 -->
+    <div style="flex:1; min-width:280px;">
+      <p style="font-weight:600; margin:0 0 8px 0;">Processed Video (no silence)</p>
+      <video controls style="width:100%; max-width:400px; border-radius:8px; box-shadow:0 2px 6px #00000015;">
+        <source src="Vedio2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      
+    </div>
+  </div>
 </div>
 
 <div id="people">
