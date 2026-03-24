@@ -61,10 +61,39 @@ role-tables:
 
 <gradio-app src="https://longwang3229-longwang3229.hf.space" theme_mode="light"></gradio-app>
 
-<h3>AI Generated Audio Demo</h3>
-<audio controls>
-  <source src="audio.wav" type="audio/wav">
-</audio>
+<div style="
+  margin: 30px 0;
+">
+  <h3 style="
+    margin: 0 0 15px 0;
+    color: #2d3436;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-bottom: 2px solid #dee2e6;
+    padding-bottom: 8px;
+  ">
+    AI Generated Audio Demo
+  </h3>
+  <div style="
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  ">
+    <span style="
+      font-size: 1.5rem;
+      color: #636e72;
+    ">
+      🎵
+    </span>
+    <audio controls style="
+      flex: 1;
+      min-width: 280px;
+    ">
+      <source src="audio.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    
+  </div>
+</div>
 
 <div id="people">
     <h2 style="color:#16a085;">People</h2>
